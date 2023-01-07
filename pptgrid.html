@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap&effect=shadow-multiple" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyDiapo</title>
+    <!-- ::::::::::::: ESTILOS :::::::::::::-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');    
+    @font-face {
+    font-family: SFRbld;
+    src: url(SFRbld.ttf);}
+
+    :root{
+    --bgcolor: #5533FF;
+    --colors: yellow;}
+
+    * {border: 1px solid white;}
+
+    .parent {         
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) repeat(3, 0);
+    grid-template-rows: 1.7fr 6fr 0.3fr repeat(2, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 2px;
+    height: 97.7vh;
+    background-image: linear-gradient(#4568dc, #b06ab3); 
+    color: var(--colors);
+    border-radius: 10px;}
+
+    .div1 { grid-area: 1 / 1 / 2 / 3; font-size: 5.5em; color: var(--colors); padding: 5px;font-family: 'Josefin Sans'; font-weight: bold; display: flex;
+            align-items: center; justify-content: center; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; padding: 30px; font-size: 2em; font-family: 'Josefin Sans'; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; padding: 10px; display: flex;
+            align-items: center; justify-content: center;}
+    .div4 { grid-area: 3 / 1 / 4 / 3; }
+
+    iframe{
+        height: 90%;
+        width: 88.5%;
+        border-radius: 10px;}
+    </style>
+
+</head>
+
+    <!-- ::::::::::::: CUERPO :::::::::::::-->
+
+<body>
+    <div class="parent"> 
+        <div contenteditable="true"  id="title" class="div1"> Hello!
+        </div>
+        <div class="div2" contenteditable="true" >ss</div>
+        <div class="div3" contenteditable="true" >
+            <iframe  src="https://www.youtube.com/embed/MkbRIr-c9OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+            </iframe></div>
+            <div class="div4"> c</div> 
+        </div>
+    </div>        
+    
+</body>
+</html>
